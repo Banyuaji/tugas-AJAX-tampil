@@ -5,7 +5,7 @@
     $password = "";
     $port = "3066";
 
-    $db1 = new mysqli($host, $username, $password, $database, $port);
+    $db1 = new mysqli($host, $username, $password, $database);
 
     if ($db1->connect_error) {
         die('Connection failed : ' . $conn->connect_error);
